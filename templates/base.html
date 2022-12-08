@@ -1,0 +1,70 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/a3f5eb5158.js" crossorigin="anonymous"> </script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <title>Null</title>
+</head>
+<body></body>
+  <div class="menu">
+    {% if request.user.is_authenticated %}
+    <div class="logo">
+      <h1>To Do List</h1>
+    </div>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="navbar">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="{% url 'logout' %}">Log Out</a></li>
+      </ul>
+    </div>
+    {% else %}
+    <div class="logo">
+      <h1>To Do List</h1>
+    </div>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="navbar">
+      <ul>
+        <li><a href="{% url 'register' %}">Sign Up</a></li>
+        <li><a href="{% url 'login' %}">Log In</a></li>
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+  {% block content %} 
+
+  {% endblock content %} 
+
+  <div class="footer">
+    <div class="center1">
+      <p>@Cliff Copyright</p>
+    </div>
+  </div>
+
+
+  <script>
+     hamburger=document.querySelector(".hamburger")
+     hamburger.onclick=function(){
+        navBar=document.querySelector(".navbar")
+        navBar.classList.toggle("active");
+     };
+     window.onscroll = () =>{
+        navBar.classList.remove("active");
+     }
+  </script>
+ </body>
+</html>

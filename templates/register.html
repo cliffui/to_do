@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero1">
+        <div class="reg">
+            <div class="log1">
+            <h1>CREATE AN ACCOUNT</h1>
+            </div>
+             {% for message in messages %}
+             <h5>{{message}}</h5>
+             {% endfor %}
+            <div class="form1">
+              <form action="register" method="post">
+                {% csrf_token %}
+                <p>Enter Username</p>
+                <input type="text" name="username" placeholder="Enter Username" required >
+                <p>Enter Email</p>
+                <input type="email" name="email" placeholder="Enter Email" required >
+                <p>Input Password</p>
+                <input type="password" name="password" placeholder="Input Password" required >
+                <p>Confirm Password</p>
+                <input type="password" name="password2" placeholder="Confirm Password" required ><br>
+                <input type="submit" value="Sign Up">
+              </form>
+            </div>
+            <div class="form2">
+            <p>Already Have An Account.?<a href="{% url 'login' %}">Log In Here</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

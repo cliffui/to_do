@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+<div class="hero3">
+    <div class="reg2">
+        <div class="log3">
+        <h1>Welcome,<span>{{new_model}}</span></h1>
+        <hr>
+        <p>Your Accout Has Been Created Successfully.
+         <a href="{% url 'login' %}">Log In </a>
+        </p>
+        </div>
+    </div>
+</div>
+{% endblock content %}

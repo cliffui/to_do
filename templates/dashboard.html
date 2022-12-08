@@ -1,0 +1,38 @@
+{% extends 'base.html' %} 
+
+{% block content %} 
+<div class="form">
+    <div class="form-letter">
+    <form  method="post">
+      {% csrf_token %}
+      <input type="text" name="list_name" placeholder="Add list">
+      <input type="submit" value="Add">
+    </form>
+    </div>
+  </div>
+  <div class="hero">
+    {% for message in messages %}
+    <div class="alert">
+       <span class="closebtn" onclick="this.parentElement.style.display='none';" >
+    &times;</span>{{message}}
+    </div>
+    {% endfor %}
+    <div class="center">
+      <p id="para">{{request.user.username|upper}} To Do list</p>
+    </div>
+    <div class="row">
+      {% for list in request.user.lists.all reversed %}
+      <div class="column">
+        <div class="col">
+        <p>{{list.body}}:<strong>({{list.created_at}})</strong></p>
+        <div class="link">
+        <a title="Edit List" href="{% url 'edit' list.id %}"><i class="fa-solid fa-pen"></i></a>
+        <a title="Delete List" href="{% url 'delete' list.id %}"><i class="fa-solid fa-trash-can"></i></a>
+        </div>
+        </div>
+      </div> 
+      {% endfor %} 
+    </div>
+  </div>
+
+{% endblock content %}
