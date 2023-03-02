@@ -1,0 +1,452 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	list-style-type:none;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+.menu{
+	padding:40px 15%;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	background-color: #191919;
+	width:100%;
+	height:auto;
+}
+.logo{
+	color:aqua;
+	font-size: 25px;
+	font-weight: bold;
+}
+.navbar ul {
+	display:flex;
+}
+.navbar ul li a{
+	display: block;
+	padding: 10px 25px;
+	color:white;
+	font:bold;
+}
+.navbar ul li a:hover{
+	color:red;
+}
+.form{
+	background-color: #191919;
+	width:100%;
+	height:auto;
+	padding:40px 15%;
+}
+.form-letter{
+	width:100%;
+}
+.form-letter input[type=text]{
+	padding: 20px 30px;
+	width:75%;
+	border-radius: 20px;
+
+}
+.form-letter input[type=submit]{
+	padding: 20px 25px;
+	background: green;
+	color:white;
+	border-radius: 20px;
+	font-weight: bold;
+	border:none;
+	cursor:pointer;
+}
+.form-letter input[type=submit]:hover{
+    color:white;
+	background: #191919;
+	border:2px solid red;
+}
+.hero{
+	background-color: black;
+	padding: 40px 15%;
+	height:100vh;
+	width:100%;
+}
+.center{
+	text-align: center;
+	color:green;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.row{
+	background-color:white;
+	padding-top: 2px;
+	margin-bottom: 10px;
+	overflow: scroll;
+	height:470px;
+}
+.column{
+	background-color:antiquewhite;
+	max-width: 100%;
+	padding: 10px 25px;
+	padding: 10px 2%;
+	margin:20px 0px 0px 0px;
+}
+.col::after{
+   content:"";
+   clear:both;
+   display:table;
+}
+.text{
+	width:50%;
+	float: left;
+	padding: 16px;
+}
+.text2{
+	width:600px;
+	display: block;
+	word-break: break-word;
+}
+
+.text1 a{
+	padding:10px 25px;
+}
+.text1{
+	display: flex;
+	float: right;
+}
+
+.fa-solid.fa-trash-can{
+	color:red;
+	font-size: 20px;
+}
+.fa-solid.fa-pen{
+	color:blue;
+	font-size: 20px;
+}
+/** logged_out form **/
+.hero3{
+	width:100%;
+	height:100vh;
+	padding:40px 15%;
+	background-color:black;
+}
+.reg2{
+	width:100%;
+}
+.log3{
+	line-height: 40px;
+}
+span{
+	text-transform: uppercase;
+	color:green;
+}
+#para{
+	color:aqua;
+}
+.log3 h1{
+	color:white;
+	font-weight: bold;
+}
+.log3 p{
+	color:white;
+	font-weight: bold;
+}
+.log3 a{
+	color:darkcyan;
+}
+
+/** edit form **/
+.hero2{
+	width:100%;
+	height:100vh;
+	background-color:black;
+	padding:40px 15%;
+}
+.reg1{
+	background-color: white;
+	padding: 20px 25px;
+	width:50%;
+	height:auto;
+	border-radius: 30px;
+	box-shadow: 5px 5px white ;
+}
+.log2{
+	color:black;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.form3 textarea{
+	padding: 10px 25px;
+	width:100%;
+	border: 1px solid #191919;
+}
+.form3 p{
+	color:black;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.form3 input[type=submit]{
+	padding:10px 25px;
+	margin-top: 10px;
+	background-color:goldenrod;
+	color:black;
+	text-transform: uppercase;
+	width:100%;
+	cursor:pointer;
+	border:none;
+}
+/** register form **/
+.hero1{
+	width:100%;
+	height:100vh;
+	background-color:#191919;
+	padding: 100px 35%;
+}
+.reg{
+	background-color:white;
+	padding:20px 25px;
+	line-height: 30px;
+	width:100%;
+	border-radius: 30px;
+	height:auto;
+}
+.reg h5{
+	color:red;
+	font-weight: bold;
+}
+.log1{
+	color:black;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.form1 p{
+ 
+  font-size:16px;
+  color:black;
+ 
+}
+
+
+.form1 input[type=text],
+input[type=email],
+input[type=password]{
+	padding:10px 25px;
+	width:100%;
+	border:1px solid #191919;
+}
+.form1 input[type=submit]{
+	padding:10px 25px;
+	margin-top: 10px;
+	background-color:green;
+	color:white;
+	text-transform: uppercase;
+	width:100%;
+	cursor:pointer;
+	border:none;
+}
+
+.form2 {
+	text-align: center;
+	margin-top: 10px;
+}
+.form2 p{
+	font-weight: bold;
+}
+.form2 a{
+	color: blue;
+}
+/** alert button **/
+.alert{
+    padding:20px;
+    background-color:green;
+    color:white;	
+	width:50%;
+	margin-left: 200px;
+	margin-bottom: 10px;
+	border-radius: 30px;
+}
+.closebtn{
+    margin-left: 15px;
+    color:white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor:pointer;
+    transition: 0.3s;
+}
+.closebtn:hover{
+    color:black;
+}
+.footer{
+	background-color:#191919 ;
+	width:100%;
+	height:auto;
+	padding:40px 15%;
+	position:fixed;
+}
+.center1{
+	padding:10px 25px;
+	text-align: center;
+	color:white;
+	font-weight: bold;
+}
+@media(max-width:1270px){
+	.menu{
+		padding: 20px 8%;
+	}
+	.hero1{
+		padding:120px 30%;
+	}
+	.hero2{
+		padding: 40px 8%;
+	}
+	.alert{
+		margin-left: 200px;
+	}
+	.hero3{
+		padding:40px 8%;
+	}
+	.form{
+		padding:20px 8%;
+	}
+	.hero{
+		padding: 20px 8%;
+	}
+}
+@media(max-width:990px){
+	.form{
+		padding: 20px 8%;
+	}
+	.alert{
+		width:75%;
+	}
+	.alert{
+		margin-left: 50px;
+	}
+    .text{
+		width:50%;
+	}
+	.text2{
+		width: 450px;
+	}
+	.text1{
+		float:right;
+	}
+	.hero1{
+		padding: 120px 20%;
+	}
+	.hero2{
+		padding:40px 4%;
+	}
+
+	.hero3{
+		padding: 40px 8%;
+	}
+	.reg1{
+		width:75%;
+	}
+    .hero{
+		padding: 20px 8%;
+	}
+}
+@media(max-width:800px){
+	.menu{
+		padding: 20px 4%;
+	}
+	.hero1{
+		padding:120px 4%;
+	}
+	.alert{
+		margin-left: 0px;
+	}
+	.reg1{
+		width:100%;
+	}
+	.log1{
+	  max-width: fit-content;
+	}
+	.log1 h1{
+		width:100%;
+		text-align: start;
+		font-size: 25px;
+	}
+	.alert{
+		width:100%;
+	}
+	
+	.reg2{
+		width:100%;
+	}
+	.text2{
+		width:100%;
+	}
+   .text{
+    width: 100%;
+    }
+	.text1{
+		float: left;
+	}
+	.column{
+		max-width:100%;
+	}
+	.link{
+		padding-top: 20px;
+	}
+	.col p{
+		width:100%;
+	}
+	.hero{
+		padding: 20px 4%;
+	}
+	.form{
+		padding: 20px 4%;
+	}
+	.form-letter{
+		width:100%;
+	}
+	.navbar{
+		position:absolute;
+		left:0px;
+		right:0px;
+		width:100vw;
+		top:80px;
+		height:0px;
+		overflow: hidden;
+		background-color:black;
+	}
+	.navbar.active{
+         height:auto;
+	}
+	.navbar ul{
+		display: block;
+		text-align: center;
+		opacity: 0;
+	}
+	.navbar.active ul{
+		opacity:1;
+	}
+	.navbar ul li a{
+		margin-top: 10px;
+		font-size:20px;
+		padding: 5px 10px;
+	}
+	.form-letter input[type=text]{
+		width:75%;
+	}
+	.logo{
+		font-size: 20px;
+		width:100%;
+	}
+	.hamburger{
+		display: block;
+		cursor: pointer;
+	}
+	.hamburger .line{
+		width:20px;
+		height:2px;
+		margin:6px;
+		background: white;
+	}
+}
